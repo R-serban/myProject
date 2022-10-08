@@ -21,6 +21,7 @@ app.get('/site/:page/:file', (req, res) => {
         jsfiles.on('data', (chunk) => {
             res.write(chunk);
             
+            
         });
 
         jsfiles.on('end', () => {
