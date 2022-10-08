@@ -1,0 +1,11 @@
+{
+    "name": "Prtoject",
+    "version": "0.1.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "sn": "nodemon index.js"
+    },
+    "author": "Kertaev Nurdavlet",
+    "license": "ISC"
+}
