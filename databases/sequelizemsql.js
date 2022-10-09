@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes, Model} = require('sequelize');
 const sequelize = new Sequelize("node_test", "node", "30032003", {
     host: "localhost",
-    dialect: "mysql",
+    dialect: "mariadb",
     port: 3306
 })
 module.exports = async function get (name, age, reacts, attache) {

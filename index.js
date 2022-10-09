@@ -20,8 +20,6 @@ app.get('/site/:page/:file', (req, res) => {
         })
         jsfiles.on('data', (chunk) => {
             res.write(chunk);
-            
-            
         });
 
         jsfiles.on('end', () => {
@@ -51,7 +49,7 @@ app.get("/", (req, res) => {
         res.write(chunk);
     });
 
-    page.on('end', () => {s
+    page.on('end', () => {
         res.end();
     });
 
@@ -64,8 +62,12 @@ app.get("/", (req, res) => {
 
 
 app.post("/", urlencodedParser , (req, res) => {
-    
+    const body = req.body;
     console.log(req.body);
+    if(body.name === "" && body.age === "" && body.reacts == null) {
+        res.writeHead(200)
+        res.wr        res.end();
+    }
     res.writeHead(301, {
         Location: '/'
     });

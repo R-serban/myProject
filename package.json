@@ -7,5 +7,12 @@
         "sn": "nodemon index.js"
     },
     "author": "Kertaev Nurdavlet",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "mariadb": "^3.0.1",
+        "mysql2": "^2.3.3",
+        "node-fetch": "^3.2.10",
+        "sequelize": "^6.24.0"
+    }
 }
