@@ -5,7 +5,7 @@ const contentTypes = require("./configs/config");
 const urlParse = require("url").parse;
 const urlencodedParser = express.urlencoded({ extended: false });
 const database = require('./databases/sequelizemsql');
-
+const nodeFetch = require('node-fetch');
 
 app.get('/site/:page/:file', (req, res) => {
     
@@ -65,8 +65,7 @@ app.post("/", urlencodedParser , (req, res) => {
     const body = req.body;
     console.log(req.body);
     if(body.name === "" && body.age === "" && body.reacts == null) {
-        res.writeHead(200)
-        res.wr        res.end();
+        nodeFetch.
     }
     res.writeHead(301, {
         Location: '/'
